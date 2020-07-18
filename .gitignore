@@ -1,3 +1,6 @@
+# Evaluator model
+DLHLP2020HW5/evaluator/*.binary
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

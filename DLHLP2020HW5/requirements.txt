@@ -1,0 +1,7 @@
+torch
+torchtext
+nltk
+fasttext
+pypi-kenlm
+tqdm
+wandb
