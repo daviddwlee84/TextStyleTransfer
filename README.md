@@ -58,8 +58,8 @@ HW5-2: Understand the modules of Sylte Transformer
    1. sample one sentence, mask one position at a time and do style transfer
    2. show the results and explaination
 
-```py
-# code has already done (just load the model trained in HW5-1
+```sh
+# code has already done (just load the model trained in HW5-1)
 python3 main.py --part2 --part2_model_dir=<trained_model_dir> --part2_step=<trained_step>
 
 # all the results could be found under ./part2_output
