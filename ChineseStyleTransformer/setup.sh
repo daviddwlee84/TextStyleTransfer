@@ -24,7 +24,8 @@ make -j2
 
 echo "Download THUCNews and Unzip..."
 wget https://thunlp.oss-cn-qingdao.aliyuncs.com/THUCNews.zip
-unzip -q THUCNews.zip -d data
+# https://www.zhihu.com/question/20523036
+unzip -O cp936 -q THUCNews.zip -d data
 rm -r data/__MACOSX
 
 echo "Setup NLTK..."
