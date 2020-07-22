@@ -2,10 +2,12 @@
 
 Style Transfer in Text
 
-## Projects
+## Projects / Dataset
 
 * Non-parallel
   * NTU Hung-yi Lee DLHLP2020 HW5
+    * Yelp
+  * Chinese Articles
 
 ### NTU Hung-yi Lee DLHLP2020 HW5
 
@@ -21,6 +23,10 @@ Style Transfer in Text
   * [Video](https://youtu.be/IBjCkt4eJCg)
   * [Starter Code](https://github.com/MarvinChung/HW5-TextStyleTransfer)
     * It is based on this paper: [Style Transformer](https://arxiv.org/abs/1905.05621) => Text version of [StarGAN](https://arxiv.org/abs/1711.09020)
+* Other
+  * [Yelp Dataset](https://www.yelp.com/dataset)
+    * [Yelp Dataset | Kaggle](https://www.kaggle.com/yelp-dataset/yelp-dataset)
+    * [Exploring yelp reviews dataset | Kaggle](https://www.kaggle.com/vksbhandary/exploring-yelp-reviews-dataset)
 
 HW5-1: Understand and train a Text Style Transfer model
 
@@ -76,13 +82,32 @@ HW5-3
    * styles are not related to positive and negative style
 3. Try other models
 
+### Resources of Chinese Corpus
+
+Pre-trained Language Model
+
+* [ymcui/Chinese-BERT-wwm: Pre-Training with Whole Word Masking for Chinese BERT（中文BERT-wwm系列模型）](https://github.com/ymcui/Chinese-BERT-wwm)
+* [brightmart/roberta_zh: RoBERTa中文预训练模型: RoBERTa for Chinese](https://github.com/brightmart/roberta_zh)
+
+Corpus
+
+* THUCNews
+  * [THUCTC: 一个高效的中文文本分类工具](http://thuctc.thunlp.org/)
+  * [Download THUCNews](http://thuctc.thunlp.org/message)
+  * Related project
+    * [gaussic/text-classification-cnn-rnn: CNN-RNN中文文本分类，基于TensorFlow](https://github.com/gaussic/text-classification-cnn-rnn)
+
 ## Model and Code
 
 ### Style Transformer
 
+#### DLHLP2020HW5
+
 > Based on the starter code of the [NTU Hung-yi Lee DLHLP2020 HW5](#NTU-Hung-yi-Lee-DLHLP2020-HW5)
 
 Files under `DLHLP2020HW5`
+
+> This will need the fasttext to be exact the version `0.8.3`.
 
 ```sh
 cd DLHLP2020HW5
@@ -93,3 +118,12 @@ bash setup.sh
 # maybe you need to execute this first
 # sudo apt install python3-dev
 ```
+
+#### Chinese Article
+
+> I use the latest version of fasttext (`0.9.2`)
+
+TODO:
+
+* [ ] Rename some variable names (if we want to keep using this model...), currently I keep using the `pos` and `neg` nameing but for two different domain articles.
+* [ ] We might want to keep some information like date unchange while doing style transfer.

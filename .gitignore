@@ -1,5 +1,12 @@
 # Evaluator model
 DLHLP2020HW5/evaluator/*.binary
+ChineseStyleTransformer/data/THUCNews*
+ChineseStyleTransformer/kenlm
+ChineseStyleTransformer/evaluator/*.bin*
+ChineseStyleTransformer/evaluator/*refs*
+ChineseStyleTransformer/save
+ChineseStyleTransformer/*.zip
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
