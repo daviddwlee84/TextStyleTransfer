@@ -3,8 +3,14 @@
 # set -xeuo pipefail
 
 echo "Install prerequisite..."
-sudo apt install -y python3-dev
-sudo apt install -y build-essential libboost-all-dev cmake zlib1g-dev libbz2-dev liblzma-dev
+# sudo apt install -y python3-dev
+# sudo apt install -y build-essential libboost-all-dev cmake zlib1g-dev libbz2-dev liblzma-dev
+# sudo apt install -y wget unzip
+
+# with root user
+apt install -y python3-dev
+apt install -y build-essential libboost-all-dev cmake zlib1g-dev libbz2-dev liblzma-dev
+apt install -y wget unzip
 
 echo "Install dependencies..."
 python3 -m pip install -r requirements.txt
