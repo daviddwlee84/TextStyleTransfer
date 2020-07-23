@@ -127,3 +127,4 @@ TODO:
 
 * [ ] Rename some variable names (if we want to keep using this model...), currently I keep using the `pos` and `neg` nameing but for two different domain articles.
 * [ ] We might want to keep some information like date unchange while doing style transfer.
+  * Found it might be very hard for a style transfer model because of the generator tends to change the "keywords" to pass the discriminator, which might be the information that we want.

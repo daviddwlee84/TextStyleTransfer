@@ -38,6 +38,18 @@ The hyperparameters for the Style Transformer can be found in `main.py` or with 
 
 ---
 
+## Evaluator
+
+### Fasttext Classifier
+
+Test on 科技 vs. 財經 (dev set)
+
+| Data Count | Precision on one | Recall on one |
+| ---------- | ---------------- | ------------- |
+| 4000       | 0.87825          | 0.87825       |
+
+---
+
 > Install PyTorch for Cuda 10.1 on linux with pip `pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html`
 
 ## Trouble Shooting
